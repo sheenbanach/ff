@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sheen/homepage'
+
   get 'master/homepage'
 
   get 'advanced/homepage'

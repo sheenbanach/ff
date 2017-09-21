@@ -10,10 +10,32 @@
 </head>
 <body>
 <%= render 'shared/nav' %>
+<div class="container">
+  <h2>Tab with Dropdown Menu</h2>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">受講生へ</a></li>
+    <li><a href="#">体験生へ</a></li>
+    <li><a href="#">各種用語の定義</a></li>
+    <li><a href="#">もう一度おさらいしたい人へ</a></li>
+    <li><a href="#">まずははじめてみよう</a></li>
+    <li><a href="#">次のレベルに上がる前に</a></li>
+    <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Tutorials <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>                        
+      </ul>
+    </li>
+  </ul>
+</div>
+
 <div class="row">
   <div class="col-lg-3"></div>
   <div class="col-lg-6">
- 
+   
 <h1>初級編宇宙旅行</h1>
 <p>まずは宇宙旅行の説明をしましょう。簡単にわかるように会話形式で見てみましょう。</p>
 </br>
